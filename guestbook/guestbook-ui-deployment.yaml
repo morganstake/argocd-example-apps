@@ -8,6 +8,8 @@ spec:
   selector:
     matchLabels:
       app: guestbook-ui
+  syncPolicy:
+    automated: {}
   template:
     metadata:
       labels:
@@ -18,5 +20,3 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 80
-  syncPolicy:
-    automated: {}
